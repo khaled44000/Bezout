@@ -1,0 +1,7 @@
+C:\Users\Utilisateur\source\repos\Bezout\Bezout\bin\Debug\Bezout.exe.config
+C:\Users\Utilisateur\source\repos\Bezout\Bezout\bin\Debug\Bezout.exe
+C:\Users\Utilisateur\source\repos\Bezout\Bezout\bin\Debug\Bezout.pdb
+C:\Users\Utilisateur\source\repos\Bezout\Bezout\obj\Debug\Bezout.csprojResolveAssemblyReference.cache
+C:\Users\Utilisateur\source\repos\Bezout\Bezout\obj\Debug\Bezout.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\source\repos\Bezout\Bezout\obj\Debug\Bezout.exe
+C:\Users\Utilisateur\source\repos\Bezout\Bezout\obj\Debug\Bezout.pdb
