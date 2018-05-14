@@ -40,6 +40,10 @@ namespace Bezout
                 reste = calculer.Item1;
                 Console.WriteLine("Le résulat : " + resultat + "\n");
                 Console.WriteLine("Le Reste : " + reste + "\n");
+                Tuple<long, long, long>  bezout = calculeBezout(nombrea, nombreb);
+                Console.WriteLine("PGCD : " + bezout.Item1 + "\n");
+                Console.WriteLine("U : " + bezout.Item2 + "\n");
+                Console.WriteLine("V : " + bezout.Item3 + "\n");
 
             }
             else
@@ -62,5 +66,35 @@ namespace Bezout
             returnedValue = new Tuple<long, long>(NbreA, resultat1);
             return returnedValue;
         }
+
+        private static Tuple<long, long, long> calculeBezout(long a, long b )
+        {
+            long r = a;
+            long r1 = b;
+            long u = 1;
+            long v = 0;
+            long u1 = 0;
+            long v1 = 1;
+           while (calculerReste(r, r1).Item2 > 0) // resultat
+            {
+               // Console.WriteLine("R1 : " + r1 + "\n");
+                long q = calculerReste(r, r1).Item2;
+                long rs = r;
+                long us = u;
+                long vs = v;
+                r = r1;
+                u = u1;
+                v = v1;
+                r1 = rs - q * r1;
+                u1 = us - q * u1;
+                v1 = vs - q * v1;
+            }
+
+            Tuple<long, long, long> s = Tuple.Create(r, u, v);
+            
+            return s;
+            
+        }
+
     }
 }
