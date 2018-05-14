@@ -54,6 +54,12 @@ namespace Bezout
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// calculerReste
+        /// </summary>
+        /// <param name="NbreA"></param>
+        /// <param name="NbreB"></param>
+        /// <returns></returns>
         private static Tuple<long , long> calculerReste(long NbreA, long NbreB)
         {
             int resultat1 = 0;
@@ -67,6 +73,12 @@ namespace Bezout
             return returnedValue;
         }
 
+        /// <summary>
+        /// calculeBezout
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         private static Tuple<long, long, long> calculeBezout(long a, long b )
         {
             long r = a;
