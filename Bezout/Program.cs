@@ -48,6 +48,15 @@ namespace Bezout
             }
             else
             {
+                Tuple<long, long> calculer = calculerReste(nombreb, nombrea);
+                resultat = calculer.Item2;
+                reste = calculer.Item1;
+                Console.WriteLine("Le résulat : " + resultat + "\n");
+                Console.WriteLine("Le Reste : " + reste + "\n");
+                Tuple<long, long, long> bezout = calculeBezout(nombreb, nombrea);
+                Console.WriteLine("PGCD : " + bezout.Item1 + "\n");
+                Console.WriteLine("U : " + bezout.Item2 + "\n");
+                Console.WriteLine("V : " + bezout.Item3 + "\n");
 
             }
 
